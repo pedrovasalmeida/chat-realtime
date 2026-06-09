@@ -35,3 +35,8 @@ Este arquivo é append-only. Use entradas no formato `## [YYYY-MM-DD] tipo | tí
 - Adicionados testes Go para protocolo, hub, WebSocket e servidor; adicionados testes unitários frontend para reducer e componentes.
 - Configurado Docker Compose para desenvolvimento local com backend em `8080`, frontend em `5173`, Air no backend, Vite HMR no frontend e overrides de porta via variáveis de ambiente.
 - Validações executadas: `cd backend && go test ./...`, build backend com `GOFLAGS=-buildvcs=false`, `cd frontend && npm run test:run`, `cd frontend && npm run build`, `docker compose config`, `docker compose up --build` com portas alternativas por conflito local em `8080`, healthcheck e smoke com dois clientes WebSocket.
+
+## [2026-06-09] documentação | README atualizado para estado implementado
+
+- Atualizado `README.md` para refletir a primeira versão funcional do projeto.
+- Documentados funcionalidades, stack, estrutura atual, comandos de execução local, overrides de porta, testes/build e fluxo manual de smoke test.
